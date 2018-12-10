@@ -1,0 +1,432 @@
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.btn{
+    border-radius: 0;
+}
+
+.form-control{
+    border-radius: 0;
+}
+
+.navbar{
+    padding:0;
+    background: #fff;
+    box-shadow: 0 2px 2px 1px rgba(0,0,0, 0.1);
+    border-bottom: #eee 1px solid;
+    border-top: #222 5px solid;
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+}
+
+
+.navbar .navbar-column{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin:0;
+    padding:0;
+}
+
+
+.navbar .top{
+  
+    padding:0;
+    display:flex;
+    background: #f1f1f1;
+    border-bottom: #eee 1px solid;
+}
+
+.navbar .bottom .navbar-nav{
+    padding:0;
+    color: #fff;
+}
+
+.navbar .top span{
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+}
+
+.navbar .top span h6{
+    margin:0;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #777;
+}
+
+.navbar .top span a{
+    margin:0;
+    font-size: 0.75rem;
+    font-weight: 300;
+    margin-left: 0.5rem;
+    color: #777;
+    text-decoration: underline;
+}
+
+
+
+.navbar .top  .navbar-nav .nav-item{
+    margin:0;
+    padding:0;
+}
+
+.navbar .top  .navbar-nav .nav-item .nav-link{
+    margin:0;
+    padding:0.75rem 1rem;
+    color: #777;
+    font-weight: 500;
+    font-size: 0.75rem;
+   
+}
+
+.navbar .top  .navbar-nav .nav-item .nav-link:hover{
+    color: #0082cc;
+}
+
+.navbar .top  .navbar-nav .nav-item .active{
+    background: #fff;
+    color: #444;
+}
+
+.navbar .top  .navbar-nav .nav-item .bold{
+    font-weight: 900;
+    border-right: #eee 1px solid;
+    border-left:none;
+}
+
+.navbar .top .links{
+    margin-left: auto;
+}
+
+.navbar .bottom{
+    background: #fff;
+    padding: 0rem 1rem;
+    display:flex;
+    align-items: center;
+}
+
+.navbar .bottom .navbar-brand{
+    color: #444;
+    font-weight: 900;
+}
+
+.navbar .bottom .navbar-brand img{
+    position: relative;
+    top: 0px;
+}
+
+.navbar .bottom .navbar-nav .nav-item{padding: 1rem 0;}
+
+.navbar .bottom .navbar-nav .nav-item .nav-link{
+    margin:0;
+    padding:0.5rem 1rem;
+    color: #444;
+    font-weight: 700;
+    font-size: 0.9rem;
+    text-transform: uppercase; 
+}
+
+.navbar .bottom .navbar-nav .nav-item .dropdown{
+    background: #fff;
+    position: fixed;
+    width: 600px;
+    margin:1.06rem 0 0 -15%;
+    padding:0;
+    
+    display:flex;
+    z-index: 33;
+    border-bottom: #ccc 1px solid;
+    box-shadow: 2px 2px 3px 2px rgba(0,0,0, 0.3);
+    transition: opacity 1s;
+    visibility:hidden;
+    opacity:0;
+}
+
+.navbar .bottom .navbar-nav .nav-item .dropdown .col-12{
+    padding:0;
+}
+
+.navbar .bottom .navbar-nav .nav-item .dropdown .col-2, .navbar .bottom .navbar-nav .nav-item .dropdown .col-3{
+    padding: 0rem;
+}
+
+.navbar .bottom .navbar-nav .nav-item .dropdown .border-right{
+    border-right: #eee 1px solid;
+   
+}
+
+.navbar .bottom .navbar-nav .nav-item .dropdown i{
+    color: #0082cc;
+}
+
+.navbar .bottom .navbar-nav .nav-item .dropdown h6{
+    color: #444;
+    font-weight: 900;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+   
+}
+
+.navbar .bottom .navbar-nav .nav-item .dropdown .nav .nav-item{
+    padding:0 0 0rem 0;
+}
+
+.navbar .bottom .navbar-nav .nav-item .dropdown .nav .nav-item .nav-link{
+    padding:0;
+    background: #fff;
+    color: #444;
+    text-transform: none;
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+
+.navbar .bottom .navbar-nav .nav-item .dropdown .bold .nav-item .nav-link{
+    font-weight: 700;
+    color: #fff;
+    background: transparent;
+    font-size: 0.9rem;
+}
+
+.navbar .bottom .navbar-nav .nav-item:hover .dropdown{
+    display:block;
+    visibility:visible;
+    opacity:1;
+    margin:1.06rem 0 0 -15%;
+}
+
+.navbar .bottom  .navbar-nav .nav-item .nav-link:hover{
+    color: #0082cc;
+}
+
+.navbar .bottom .navbar-nav .nav-item:hover a.nav-link{
+   background: #0082cc;
+   color: #fff;
+}
+
+.navbar .bottom .navbar-nav .nav-item:hover .dropdown{
+    display:flex;
+}
+
+.navbar .bottom .btn-menu-open,  .navbar .bottom .btn-menu-close{
+    display:none;
+    margin: 1rem 0 1rem 2rem;
+}
+
+@media only screen and (max-width: 700px) {
+
+    .navbar .top .product-lines{
+        display: none;
+    }
+
+    .navbar .top .links{
+        margin-left:0;
+    }
+    
+    .navbar .top  .navbar-nav  .help{
+        display:none;
+    }
+   
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .navbar .bottom .btn-menu-open{
+        display:inline-block;
+    }
+
+    .navbar .top span{
+        display: none;
+    }
+
+    .navbar .bottom .navbar-nav{
+        display: none;
+    }
+}
+
+
+
+.jumbotron{
+   
+    padding: 0;
+    margin-top: 118px;
+   
+}
+
+.jumbotron .deals-news{
+    padding: 1rem 0;
+    margin:0;
+    background: #0082cc;
+    border-bottom: #0082cc 1px solid;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 2px 1px rgba(0,0,0, 0.2);
+    
+}
+
+
+
+.jumbotron .deals-news h6{
+    margin:0;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.jumbotron .deals-news a{
+    font-size: 0.8rem;
+    color: #fff;
+    margin-left: 1rem;
+}
+
+
+
+.jumbotron .banner{
+    display:flex;
+    align-items: center;
+    padding: 12rem 1rem;
+    margin:0;
+    text-shadow: 1px 1px 1px rgba(0,0,0, 0.5);
+    background: #fff url(https://pullzoneac-73f9.kxcdn.com/wp-content/uploads/2018/12/polo.jpg) center 0 no-repeat;
+    background-size: cover;
+}
+
+.jumbotron .banner h4{
+    color: #fff;
+    font-weight: 900;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    margin:0;
+}
+
+.jumbotron .banner h1{
+    color: #fff;
+    font-weight: 900;
+    font-size: 3rem;
+    margin:0;
+    
+}
+
+.jumbotron .banner h1 span{
+    color: #fff;
+}
+
+.jumbotron .banner p{
+    color: #fff;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.jumbotron .banner p span{
+    color: #fff;
+    background: #0082cc;
+    padding: 0.2rem 0.5rem;
+    text-shadow: none;
+}
+
+.categories .col-6{
+    background: url(https://pullzoneac-73f9.kxcdn.com/wp-content/uploads/2017/04/ac_men_cta-min.jpg) 0 0 no-repeat;
+    padding: 0rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-size: cover;
+}
+
+.categories .col-6 a{
+    font-size: 5rem;
+}
+
+.drawer{
+    position: fixed;
+    top:119px;
+    left:0;
+    height: calc(100% - 119px);
+    width: 100%;
+    z-index: 9999;
+    display:flex;
+    transition: opacity 1s;
+    visibility:hidden;
+    opacity:0;
+}
+
+.drawer .drawer-left{
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    overflow-y: auto;
+}
+
+.drawer .drawer-left .account{
+    display:flex;
+    align-items: center;
+    background: #222;
+    border-bottom: #000 1px solid;
+    color: #fff;
+    padding: 1rem;
+}
+
+.drawer .drawer-left .account i{
+    font-size: 2rem;
+}
+
+.drawer .drawer-left .account h6{
+    margin:0 0 0 1rem;
+    font-size: 0.9rem;
+}
+
+.drawer .drawer-left .nav .nav-item .nav-link{
+    border-bottom: #ccc 1px solid;
+    padding: 1rem;
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+
+.dialog{
+    position: fixed;
+    top:119px;
+    left:0;
+    height: calc(100% - 119px);
+    width: 100%;
+    z-index: 9999;
+    display:flex;
+}
+
+.dialog-search{
+    padding: 50px;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+}
+
+.dialog-search h3{
+    margin-top: 2rem;
+    color: #444;
+    margin:0;
+    padding:0;
+}
+
+.dialog-search form{
+    justify-content: center;
+}
+
+.dialog-search form .form-control{
+    background:transparent;
+    border:none;
+    box-shadow: none;
+    outline:none;
+    border-bottom: #222 3px solid;
+    color: #444;
+    width: 50%;
+}
+
